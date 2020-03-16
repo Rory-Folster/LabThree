@@ -1,18 +1,47 @@
-let aPlus = [85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100];
-let a = [84, 83, 82, 81, 80];
-let aMinus = [79, 78, 77, 76, 75];
-let bPlus = [74, 73, 72, 71, 70];
-let b = [69, 68, 67, 66, 65];
-let bMinus = [64, 63, 62, 61, 60];
-let cPlus = [59, 58, 57, 56, 55];
-let c = [54, 53, 52, 51, 50];
-let d = [49, 48, 47, 46, 45, 44, 43, 42, 41, 40];
-let e = [39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-const result = "1";
+grade = 56
 
-switch (result) {
-    case aPlus:
-        if (result < aPlus)
-        console.log("A+");
+switch (true) {
+    // If score is 85-100
+    case grade >= 85 && grade <= 100:
+        console.log("A+ Pass with Distinction");
         break;
-}else if
+    // If score is 80-84
+    case grade >= 80 && grade <= 84:
+        console.log("A Pass with Distinction");
+        break;
+    // If score is 75-79
+    case grade >= 70:
+        console.log("A- Pass with Distinction");
+        break;
+    // If score is 70-74
+    case grade >= 70 && grade <= 74:
+        console.log("B+ Pass with Merit");
+        break;
+    // If score is 65-69
+    case grade >= 65 && grade <= 69:
+        console.log("B Pass with Merit");
+        break;
+    // If score is 60-64
+        case grade >= 60 && grade <= 64:
+            console.log("B- Pass with Merit");
+            break;
+    // If score is 55-59
+    case grade >= 55 && grade <= 59:
+        console.log("C+ Pass with Merit");
+        break;
+    // If score is 50-54
+    case grade >= 50 && grade <= 54:
+        console.log("C Pass with Merit");
+        break;
+    // If score is 40-49
+    case grade >= 40 && grade <= 49:
+        console.log("D Pass with Merit");
+        break;
+    // If score is 0-39
+    case grade >= 0 && grade <= 39:
+        console.log("E Pass with Merit");
+        break;
+    // Anything else
+    default:
+        console.log("Error");
+}
